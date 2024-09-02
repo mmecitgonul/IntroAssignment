@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+     <!-- Header and side paragraph -->
+    <title>Mecit/Main</title>
+    <h1 style="justify-content:center; color: rgb(209, 211, 212); display: inline-flex; vertical-align: middle; transform: translate(140%, -10%);
+      font-family:Franklin Gothic Medium;font-size: 300%; justify-content: center; align-items: center;">
+      Mecit Assignment</h1> <p style="font-size: 100%; display: inline-flex; color: rgb(225, 236, 245);
+      align-items: center; justify-content: center; transform: translate(89%, 170%);">Made with HTML + CSS</p>
+      
+      <img style="justify-content:center; width: 5%; transform: translate(-140%, 50%);" src="res/mepic3.png"></img>
+
+    <style>   
+      html{
+        scroll-behavior: smooth;
+      }
+      body{
+        background-image: url("res/background.gif");
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-size: 100% 100%;
+      }
+
+
+      /*/ELEMENTS 1/*/
+      .container{
+        position: absolute;
+        width: 10%;
+        height: 20%;
+        margin: 0 auto;
+        transform: translate(300%, 30%);
+        justify-content:center;
+      }
+      .image{
+        position: relative;
+        display:block;
+        width: 100%;
+        justify-content:center;
+      }
+      .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 110%;
+        width: 100%;
+        border-radius: 50%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #75757580;
+        justify-content:center;
+      }
+
+      /*/ELEMENTS 2/*/
+      .container2{
+        position: absolute;
+        width: 100%;
+        transform: translate(150%, -100%);
+      }
+      .image2{
+        position: relative;
+        display:block;
+        width: 100%;
+      }
+      .overlay2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #75757580;
+      }
+
+
+      /*/ELEMENTS 3/*/
+      .container3{
+        position: absolute;
+        width: 100%;
+        transform: translate(150%, -100%);
+      }
+      .image3{
+        position: relative;
+        display:block;
+        width: 100%;
+      }
+      .overlay3{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #75757580;
+      }
+
+      /*/IF overlays are hovered, then .overlay1,2,3 opacitiy = 1/*/
+      .overlay:hover{
+        opacity: 1;
+      }
+      .overlay2:hover{
+        opacity: 1;
+      }
+      .overlay3:hover{
+        opacity: 1;
+      }
+
+
+
+      </style>
+  </head>
+  <body>
+
+    <!-- IMAGE1,2,3 overlay  Assign divisions .image and container, set text, link etc. -->
+    <a href="report.html">
+    <div class="container">
+      <img src="res/rapportpic.png" class="image">
+      <div class="overlay">
+        <div class="text" style="justify-content: center; color: rgb(8, 8, 8);-webkit-text-stroke: 1px wheat;
+        font-family:Franklin Gothic Medium;font-size: 250%;text-align: center;
+        vertical-align: middle;line-height: 100px;">Report</div>
+    </div>
+    </a>
+
+    <a href="profile.html">
+    <div class="container2">
+      <img src="res/profilepic.png" class="image2">
+      <div class="overlay2">
+        <div class="text" style=" justify-content:center; color: rgb(8, 8, 8);-webkit-text-stroke: 1px wheat;
+        font-family:Franklin Gothic Medium;font-size: 250%;text-align: center;
+        vertical-align: middle;line-height: 100px;">Profile</div>
+    </div>
+    </a>
+
+    <a href="timelapse.html">
+    <div class="container3">
+      <img src="res/Timelapsepic.png" class="image3">
+      <div class="overlay3">
+        <div class="text" style="justify-content:center; color: rgb(8, 8, 8);-webkit-text-stroke: 1px wheat;
+        font-family:Franklin Gothic Medium;font-size: 250%;text-align: center;
+        vertical-align: middle; line-height: 30px; transform: translate(0%, 50%);">Time-<br>lapse</br></div>
+    </div>
+    </a>
+
+
+  </body>
+</html>

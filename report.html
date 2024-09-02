@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mecit/Report</title>
+
+    <Style> 
+      html{
+        scroll-behavior: smooth;
+      }
+      body{
+        background-image: url("res/background.gif");
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-size: 100% 100%;
+      }
+
+      .img1{
+        display: inline;
+        width: 3%;
+        height: 3%;
+        vertical-align: top;
+        transform: translate(40%, 40%);
+      }
+
+      .pdf {
+        display: inline;
+        width: 62%;
+        aspect-ratio: 4 / 3;
+        transform: translate(22%, 0%);
+      }
+    </Style>  
+
+  </head>
+  <body>
+
+    <a href="main.html">
+    <img class="img1" src="res/backpic.png"></img>
+    </a>
+
+    <object class="pdf" data="res/whodoc.pdf" height="599"> </object>
+
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mecit/Timelapse</title>
+
+    <style>   
+      html{
+        scroll-behavior: smooth;
+      }
+      body{
+        background-image: url("res/background.gif");
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-size: 100% 100%;
+      }
+
+      .img1{
+        display: inline;
+        width: 3%;
+        height: 3%;
+        vertical-align: top;
+        transform: translate(40%, 40%);
+        z-index: 1;
+      }
+
+    </style>  
+
+  </head>
+  <body>
+
+    <a href="main.html">
+      <img class="img1" src="res/backpic.png"></img>
+    </a>
+
+    <center>
+    <video style="justify-content:center;" align="center" width="600" height="400" autoplay muted disableRemotePlayback>
+      <source src="res/lapse.mp4" type="video/mp4">
+    </video>
+    </center>
+
+  </body>
+</html>
