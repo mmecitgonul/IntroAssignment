@@ -32,7 +32,7 @@
         width: 10%;
         height: 20%;
         margin: 0 auto;
-        transform: translate(300%, 30%);
+        transform: translate(220%, 30%);
         justify-content:center;
       }
       .image{
@@ -107,6 +107,31 @@
         background-color: #75757580;
       }
 
+      /*/ELEMENTS 4/*/
+      .container4{
+        position: absolute;
+        width: 100%;
+        transform: translate(150%, -100%);
+      }
+      .image4{
+        position: relative;
+        display:block;
+        width: 100%;
+      }
+      .overlay4{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #75757580;
+      }
+
       /*/IF overlays are hovered, then .overlay1,2,3 opacitiy = 1/*/
       .overlay:hover{
         opacity: 1;
@@ -115,6 +140,9 @@
         opacity: 1;
       }
       .overlay3:hover{
+        opacity: 1;
+      }
+      .overlay4:hover{
         opacity: 1;
       }
 
@@ -155,6 +183,15 @@
     </div>
     </a>
 
+    <a href="https://github.com/mmecitgonul/IntroAssignment" target="_blank">
+      <div class="container4">
+        <img src="res/gitpic.png" class="image4">
+        <div class="overlay4">
+          <div class="text" style="justify-content:center; color: rgb(8, 8, 8);-webkit-text-stroke: 1px wheat;
+          font-family:Franklin Gothic Medium;font-size: 250%;text-align: center;
+          vertical-align: middle; line-height: 50px; transform: translate(0%, 50%);">Github</div>
+      </div>
+      </a>
 
   </body>
 </html>
